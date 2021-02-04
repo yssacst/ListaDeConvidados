@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Convidado</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h3>Novo Convidado</h3>
+        <form action="/novoconvidado" method="POST" class="border p-3">
+            <div class="form-group">
+                <label>Nome do Convidade</label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome"/>
+            </div>
+            <div class="form-group">
+                <label>WhatsApp do Convidade</label>
+                <input type="text" id="whatsapp" required name="whatsapp" placeholder="WhatsApp"/>
+            </div>
+            <input type="hidden" id="convite" name="convite" value="1"/>
+            <button type="submit">Convidar</button>
+        </form>
+    </div>
+</body>
+</html>
